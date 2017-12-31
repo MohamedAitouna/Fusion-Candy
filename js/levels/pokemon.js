@@ -7,8 +7,7 @@ GameOne.GamePokemon.prototype={
 		__this=this;
 		spreetObject="candies";
 		init();
-		numbOfFram=4;
-		console.log("hello preload level");
+		console.log("hello the level :",numbOfFram);
 	},
 	create:function(){
 		console.log("Hello pokemons");
@@ -24,10 +23,17 @@ GameOne.GamePokemon.prototype={
 		backB.anchor.setTo(1,1);
 		
 		backScorr=this.add.sprite(0, 0, 'backScorr');
-		// backScorr.width=100;
-		// backScorr.height=100;
-		// backScorr.anchor.setTo(1,1);
-	
+		movesBar=this.add.sprite(0,backScorr.height+20, 'backScorr');
+		//barLifes=this.add.sprite(this.game.width, 0, 'backScorr');
+		//barLifes.anchor.setTo(1,0);
+		for(let i=0;i<3;i++){
+			let k=i-1;
+			let y=(k*50)+(this.game.width/2)
+			life=this.add.sprite(y,5, 'life');
+			life.anchor.setTo(0.5,0);
+			life.scale.setTo(0.6);
+		}
+
 		spawnBoard();
 		this.input.addMoveCallback(mouseMove, this);
 	
@@ -39,6 +45,15 @@ GameOne.GamePokemon.prototype={
 	
 		text = this.add.text(this.game.width/6, 10, "0");
 		text.addColor('#ffffff',0);
+
+		moves = this.add.text(10+this.game.width/6,backScorr.height+30,GameOne.mainObjects.moves[GameOne.mainObjects.currentLvl]);
+		moves.addColor('#ffffff',0);
+
+		scoreLabel=this.add.text(40, 10, "Score :");
+		scoreLabel.addColor('#ffffff',0);
+
+		moveLabel=this.add.text(40, backScorr.height+30, "Moves :");
+		moveLabel.addColor('#ffffff',0);
 
 	this.paused = false;
 		

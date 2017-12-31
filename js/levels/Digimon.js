@@ -6,7 +6,6 @@ GameOne.GameDigimon.prototype={
 		__this=this;
 		spreetObject="candies";
 		init();
-		numbOfFram=5;
 		console.log("hello preload level");
 	},
 	create:function(){
@@ -16,10 +15,6 @@ GameOne.GameDigimon.prototype={
 		back.width=this.game.width;
 		back.height=this.game.height;
 
-		
-		// logo=this.add.sprite(0, 0, 'logoC');
-		// logo.width=250;
-		// logo.height=200;
 	
 		backB=this.add.sprite(this.game.width, this.game.height, 'back');
 		backB.width=100;

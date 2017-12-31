@@ -2,7 +2,7 @@
 
  A MATCH THREE GAME  with HTML5  and Javascript
 
-![alt text](?raw=true)
+![alt text](https://github.com/MohamedAitouna/Fusion-Candy-/blob/master/fusion2.PNG?raw=true)
 
 ## Video Of The Game
 

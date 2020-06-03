@@ -1,6 +1,6 @@
 /****************************************************************************************
  ** @Boot State
- ** General game settings are defined, and the assets of the preloading screeb are loaded
+ ** General game settings are defined, and the assets of the preloading screen are loaded
  ** like: 
  ** -LOADING BAR
  ** -LOGO

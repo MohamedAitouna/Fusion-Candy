@@ -71,8 +71,6 @@ GameOne.Preload.prototype = {
 		this.load.spritesheet("digimons", "assets/img/all.png", FRAME_SIZE, FRAME_SIZE);
 		this.load.spritesheet("candies", "assets/img/candyProject.png", FRAME_SIZE, FRAME_SIZE, 63);
 
-
-		this.load.audio('test', ['assets/audio/pokemon.m4a']);
 	},
 	create: function () {
 		console.log("Hello Preload");
